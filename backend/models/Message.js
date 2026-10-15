@@ -1,3 +1,4 @@
+
 import mongoose from "mongoose";
 
 const messageSchema = new mongoose.Schema(
@@ -16,8 +17,14 @@ const messageSchema = new mongoose.Schema(
       type: String,
       required: true,
       trim: true,
-      maxlength: 2000,
+      maxlength: 5000,
     },
+    deletedBy: [
+      {
+        type: mongoose.Schema.Types.ObjectId,
+        ref: "User",
+      },
+    ],
   },
   { timestamps: true }
 );
