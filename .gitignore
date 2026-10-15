@@ -1,0 +1,25 @@
+
+# Dependencies
+node_modules/
+frontend/node_modules/
+backend/node_modules/
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+frontend/.env
+frontend/.env.*
+!frontend/.env.example
+backend/.env
+backend/.env.*
+!backend/.env.example
+
+# Build output
+frontend/dist/
+backend/dist/
+
+# Local and generated files
+.DS_Store
+Thumbs.db
+*.log
